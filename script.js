@@ -14,6 +14,6 @@ form.onsubmit = (e)=>{
         }
     
     }
-    let formData = new FormData(); //creating a new FormData obj 
-    xhr.send();
+    let formData = new FormData(form); //creating a new FormData obj 
+    xhr.send(FormData);
 }
